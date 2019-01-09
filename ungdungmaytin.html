@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Calulator<h1>
+      
+  <table align="center" width="70%">
+    <tr>
+      <td align="center">
+        <input type="number" id="a">
+        <input type="number" id="b">
+      </td
+    </tr>
+    <tr>
+      <td align="center">
+        <input type="submit" value="Addition(+)" style="background: gray " onclick="addFunction()">
+        <input type="submit" value="subtraction(-)" style="background: gray " onclick="subFunction()">
+        <input type="submit" value="multiplication(X)" style="background: gray " onclick="mulFunction()">
+        <input type="submit" value="Division(/)" style="background: gray " onclick="divition()">
+      </td>
+    </tr>
+    
+  </table>
+  <a>Ket qua la: </a><a id="ketqua"></a>
+
+<script>
+  function addFunction() {
+    var soa= (document.getElementById("a").value);
+    var sob= (document.getElementById("b").value);
+    var tong = parseInt(soa) +parseInt(sob);   
+    document.getElementById("ketqua").innerText = tong;
+}
+  function subFunction() {
+    var soa= (document.getElementById("a").value);
+    var sob= (document.getElementById("b").value);
+    var hieu = parseInt(soa) - parseInt(sob);    
+    document.getElementById("ketqua").innerText = hieu;
+}
+function mulFunction() {
+    var soa= (document.getElementById("a").value);
+    var sob= (document.getElementById("b").value);
+    var tich = parseInt(soa) * parseInt(sob);    
+    document.getElementById("ketqua").innerText = tich;
+}
+function divition() {
+    var soa= (document.getElementById("a").value);
+    var sob= (document.getElementById("b").value);
+    var thuong = parseInt(soa) / parseInt(sob);    
+    document.getElementById("ketqua").innerText = thuong;
+}
+</script>    
+</body>
+</html>
